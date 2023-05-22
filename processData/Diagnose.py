@@ -326,7 +326,6 @@ class ModelDiagnose():
     def date_generation(self, combine_num=5, attribute_num=200, address="exampleData/Imagenet10/generation.json", label_specific=True):
         generation_dict = {}
         for label in range(len(self.label_number)):
-            MD.detect_failure_in_attribute_combination(combine_num=combine_num,label=label)
             generate_used = [i['combination'][0] for i in MD.report.suggestion_for_combinations_by_rate()[:attribute_num]]
             generate_used = [[i.split(':')[1] for i in g] for g in generate_used]
             generation_dict[label] = generate_used
