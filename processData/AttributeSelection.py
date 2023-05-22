@@ -20,10 +20,10 @@ class AttributeSelection():
             self.attributes_dict[attribute]['uncertain_idx'] = []
             if type(self.attributes_dict[attribute]['prompt']) == str:
                 self.attributes_dict[attribute]['prompt'] = [self.attributes_dict[attribute]['prompt'],]
-            if self.attributes_dict[attribute]["type"] == 'binary':
-                print("Binary")
-                self.match_binary_description(attribute)
-            elif self.attributes_dict[attribute]["type"] == 'vqa':
+            # if self.attributes_dict[attribute]["type"] == 'binary':
+            #     print("Binary")
+            #     self.match_binary_description(attribute)
+            elif self.attributes_dict[attribute]["type"] == 'vqa' or self.attributes_dict[attribute]["type"] == 'binary':
                 print("VQA")
                 self.match_vqa_description(attribute)
             else:
