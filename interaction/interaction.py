@@ -1,12 +1,12 @@
 from utils.data_utils import tsne
-from preprocess.AttributeSelection import AttributePropagation
+from processData.AttributeSelection import AttributePropagation
 from interaction.ui_utils import get_correctness, data_filer, get_data_attr_distribution,show_image
 import numpy as np
 from ipywidgets import Output, HBox, widgets, VBox, Layout, Tab
 from plotly import graph_objects as go
 from interaction.activeLearning import LeastConfidence, Entropy, Margin, Coreset, KMeansSampling
 from utils.defines import *
-from preprocess.utils import emptyAttribute
+from processData.Corpus import emptyAttribute
 import json
 
 display = Output()
