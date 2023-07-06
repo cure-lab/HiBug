@@ -5,13 +5,16 @@ import copy
 UNCERTAIN_THRESHOLD = 0.2
 
 class AttributeSelection():
-    def __init__(self, datas, labels, corpus_path, label_names_dict={}) -> None:
+    def __init__(self, datas, labels, corpus, label_names_dict={}) -> None:
         self.datas = datas
         self.labels = labels
         self.label_names_dict = label_names_dict if label_names_dict!={} else {label:str(label) for label in set(labels)}
         self.data_length = len(self.datas)
-        self.corpus = json.load(open(corpus_path))["Corpus"]
-        self.attributes_dict = copy.deepcopy(self.corpus)
+        if type(corpus) == str:
+            self.corpus = json.load(open(corpus))["Corpus"]
+            self.attributes_dict = copy.deepcopy(self.corpus)
+        else:
+            self.attributes_dict = corpus
 
     def match_description_to_data(self):
         for attribute in self.attributes_dict.keys():

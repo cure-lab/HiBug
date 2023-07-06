@@ -1,5 +1,5 @@
 from utils.data_utils import tsne
-from processData.AttributeSelection import AttributePropagation
+from processData.AttributeSelection import AttributeSelection
 from interaction.ui_utils import get_correctness, data_filer, get_data_attr_distribution,show_image
 import numpy as np
 from ipywidgets import Output, HBox, widgets, VBox, Layout, Tab
@@ -230,8 +230,9 @@ class Interaction():
         self.update_attributes_layout()
 
     def on_attr_apply_button(self,sender):
-        AP = AttributePropagation(self.datas,self.labels,self.label_names_dict,self.attributes_dict)
-        self.attributes_dict = AP.match_attributes(keep_predefine=True)
+        AP = AttributeSelection(self.datas,self.labels,self.attributes_dict, self.label_names_dict)
+        AP.match_description_to_data()
+        self.attributes_dict = AP.attributes_dict
         self.update_attributes_layout()
 
     def on_attr_save_text(self,sender):
