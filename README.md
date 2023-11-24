@@ -1,5 +1,5 @@
 # HiBug
-This repo is the implementation of [HiBug: On Human-Interpretable Model Debug](https://openreview.net/pdf?id=4sDHLxKb1L). HiBug is a data centric tool for investigating bugs in visual deep learning, such as rare cases in dataset, model's correlation on visual feature. For more details, please 
+This repo is the implementation of [HiBug: On Human-Interpretable Model Debug](https://openreview.net/pdf?id=4sDHLxKb1L). HiBug is a data centric tool for investigating bugs in visual deep learning, such as rare cases in dataset, model's correlation on visual feature. 
 ![Workflow](hibug.png)
 
 ## Features
