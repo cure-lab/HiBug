@@ -11,10 +11,10 @@ class AttributeCorpus():
         datas (n*image size) : list of images / list of image addresses 
         attribute_dict ('attribute name': [distinct descriptions of this attribute]): pre-defined attributes
         """
-        if type(attribute_dict_path) == str:
-            self.attribute_dict = json.load(open(attribute_dict_path))
+        if type(attribute_dict) == str:
+            self.attribute_dict = json.load(open(attribute_dict))
         else:
-            self.attribute_dict = attribute_dict_path
+            self.attribute_dict = attribute_dict
         self.datas = datas
     
     def auto_corpus(self, low_d_cluster=True, feature_num=10000, vqa_num=1000):

@@ -1,6 +1,7 @@
 # HiBug
 
 HiBug is a data centric tool for investigating bugs in visual deep learning, such as rare cases in dataset, model's correlation on visual feature.
+![Workflow](hibug.png)
 
 ## Features
 
