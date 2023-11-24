@@ -22,8 +22,6 @@ pip install -r requirements.txt
 ## Getting Started
 1. Get a ChatGPT API key. (Optional)
 2. Follow the steps in run.ipynb.
-    - Fill the empty list with selected attribute names.
-    - Ensure that the data types match the code specifications.
 
 ## Example
 We provide a use case on celebA dataset in [Code](celebA_use_case.ipynb)
