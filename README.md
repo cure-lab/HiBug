@@ -21,9 +21,10 @@ pip install -r requirements.txt
 ```
 
 ## Getting Started
-1. Enter your ChatGPT API key in utils/gpt.py and run prepare.py.
-    - ChatGPT provides potential attribute names to explore in the bug discovery process.
-    - If you do not have an API key, you can also view the dataset through our user interface to come up with attribute names. An example of corpus_base.json is provided in exampleData/corpus_base.json.
+1. Get a ChatGPT API key.
 2. Follow the steps in run.ipynb.
     - Fill the empty list with selected attribute names.
     - Ensure that the data types match the code specifications.
+
+## Getting Started
+We provide an example use case in celebA dataset in [Code](celebA_use_case.ipynb)
