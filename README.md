@@ -1,6 +1,5 @@
 # HiBug
-
-HiBug is a data centric tool for investigating bugs in visual deep learning, such as rare cases in dataset, model's correlation on visual feature.
+This repo is the implementation of [HiBug: On Human-Interpretable Model Debug](https://openreview.net/pdf?id=4sDHLxKb1L). HiBug is a data centric tool for investigating bugs in visual deep learning, such as rare cases in dataset, model's correlation on visual feature. For more details, please 
 ![Workflow](hibug.png)
 
 ## Features
@@ -26,5 +25,18 @@ pip install -r requirements.txt
     - Fill the empty list with selected attribute names.
     - Ensure that the data types match the code specifications.
 
-## Getting Started
-We provide an example use case in celebA dataset in [Code](celebA_use_case.ipynb)
+## Example
+We provide a use case on celebA dataset in [Code](celebA_use_case.ipynb)
+
+## Citing
+
+If you find this repository useful for your work, please consider citing it as follows:
+
+```bibtex
+@inproceedings{chen2023hibug,
+  title={HiBug: On Human-Interpretable Model Debug},
+  author={Chen, Muxi and Li, Yu and Xu, Qiang},
+  booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+  year={2023}
+}
+```
